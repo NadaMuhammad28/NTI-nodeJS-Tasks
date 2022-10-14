@@ -1,0 +1,32 @@
+{{>header}}
+{{>navbar}}
+
+  {{!-- {{#if isFound}} --}}
+
+<h3 class="text-center custom-green  my-3">
+    {{title}}
+</h3>
+<form action="/addopPost" method="post">
+    <div class="mb-3">
+      <label for="acc-num">Account Number</label>
+        <input name="accNum"  type="text"value= '{{userData.accNum}}' class="form-control acc-num readonly "   readonly>
+    </div>
+    <div class="mb-3">
+      <label for="acc-name">Name</label>
+        <input name="name"  value= '{{userData.name}}' class="form-control acc-name readonly" readonly>
+    </div>
+
+       <div class="mb-3">
+      <label for="acc-balance">Remaining Balance</label>
+        <input name="remainingBalance"   value= '{{userData.remainingBalance}}' class="form-control acc-name readonly" readonly>
+    </div>
+
+
+    <div class="mb-3">
+        <input name="value" type="number" placeholder="Amount" class="form-control">
+    </div>
+    <div class="mb-3">
+        <button class="btn btn-submit  bg-green">Add</button>
+    </div>
+</form>
+{{>footer}}

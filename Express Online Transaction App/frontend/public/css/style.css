@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+body {
+  background-color: #f7f7f7;
+}
+
+.home {
+  text-align: center;
+}
+.bg-green {
+  background-color: #a4c249;
+}
+.btn-submit {
+  font-weight: 400;
+}
+.btn-submit:hover {
+  background-color: #819938;
+}
+.custom-green {
+  color: #a4c249;
+}
+.table-header {
+  background-color: #a4c249;
+  color: #fff;
+  font-weight: 700;
+}
+
+.readonly {
+  background-color: #f4f4f4;
+  border: none;
+}
