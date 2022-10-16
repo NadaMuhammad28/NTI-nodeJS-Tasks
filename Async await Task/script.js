@@ -23,7 +23,7 @@ const postData = async (data) => {
       },
     });
     const r = await d.json();
-    // console.log(r);
+    console.log(r);
     creadReadCard(r, readcard);
   } catch (e) {
     console.log(e.message);
