@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-brand {
+  font-size: 23px !important;
+  letter-spacing: 3px;
+  font-weight: 700 !important;
+}
+#intro-body {
+  background-color: #f8f8f8;
+}
+.intro-title {
+  font-size: 4.3vw;
+  margin-bottom: 3%;
+  font-weight: bold;
+  padding: 10%;
+}
+.txt-green {
+  display: block;
+  color: #359c43;
+}
+
+.api-title {
+  text-align: center;
+  font-size: 4.3vw;
+  margin-bottom: 3%;
+  font-weight: bold;
+
+  color: #359c43;
+}
+.sbmt-btn {
+  float: right;
+}
+
+.read-card {
+  padding: 5%;
+  margin-top: 4%;
+}
+.read-title {
+  font-size: 18px;
+  margin-bottom: 4%;
+}
