@@ -1,0 +1,29 @@
+{{>header}}
+{{>navbar}}
+<table class="table table-bordered">
+    <thead>
+        <tr class="text-center">
+            <th>#</th>
+            <th>Title</th>
+            <th colspan="4" class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#if isEmpty}}
+        <tr class="alert alert-danger">
+            <td colspan="6">No Tasks found</td>
+        </tr>
+        {{else}}
+        {{#each data}}
+        <tr class="text-center">
+            <td>{{_id}}</td>
+            <td>{{title}}</td>
+            <td><a href="/task/{{_id}}" class="btn bg-success text-light">Show</a></td>
+           <td><a href="/edit/{{_id}}" class="btn bg-dark text-light">Edit</a></td>
+            <td><a href="/del/{{_id}}" class="btn btn-danger text-light">Delete</a></td>
+        </tr>
+        {{/each}}
+        {{/if}}
+    </tbody>
+</table>
+{{>footer}}
